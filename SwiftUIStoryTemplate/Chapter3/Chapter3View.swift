@@ -39,7 +39,9 @@ struct Chapter3View: View {
                             .cornerRadius(10)
                     }
                     .shadow(color: .black, radius: 8, y: 6)
+                
                 }
+            
                 
                 ScrollView {
                     
@@ -64,10 +66,10 @@ struct Chapter3View: View {
                             .cornerRadius(10)
                     }
                     .shadow(color: .black, radius: 8, y: 6)
+        
                     
                 }
-                
-                
+            
             }
         }
     }

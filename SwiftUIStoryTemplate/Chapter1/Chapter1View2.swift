@@ -292,19 +292,19 @@ Test
 """
         
         if let newTeam = POteams.randomElement() {
-            gameResults +=  "Your first Play-Off game is today.\n The lions will now play against \(newTeam.TeamName)"
+            gameResults +=  " Your first Play-Off game is today. The lions will now play against \(newTeam.TeamName)"
             
             if pointTotal >= newTeam.Score {
                 
                 
-                gameResults += "Great job, \(coachName)! You Won against the \n \(newTeam.TeamName)! That means you are moving on \n to the next Play-Off game!"
+                gameResults += " Great job, \(coachName)! You Won against the \(newTeam.TeamName)! That means you are moving on to the next Play-Off game!"
                 
                 // footBallVM.totalWins += 1
                 POteams.removeAll(where: {$0 == newTeam })
                 didWinFirstRound = true
                 
             } else if pointTotal < newTeam.Score {
-                gameResults += "Your team lost against the \(newTeam.TeamName), SOL!"
+                gameResults += " Your team lost against the \(newTeam.TeamName), SOL!"
                 
                return gameResults
                 // footBallVM.totalLosses += 1
@@ -316,19 +316,19 @@ Test
         if didWinFirstRound == true {
             
             if let newTeam = POteams.randomElement() {
-                gameResults += "Theres a new game \n You're in the second round of the play-off's now\n The lions will now play against \(newTeam.TeamName)"
+                gameResults += " Theres a new game You're in the second round of the play-off's now The lions will now play against \(newTeam.TeamName)"
                 
                 if pointTotal >= newTeam.Score {
                     
                     
-                    gameResults += "Great job, \(coachName)! You Won against the \(newTeam.TeamName)! That means you are moving on to the next Play-Off game!"
+                    gameResults += " Great job, \(coachName)! You Won against the \(newTeam.TeamName)! That means you are moving on to the next Play-Off game!"
                     
                     //footBallVM.totalWins += 1
                     POteams.removeAll(where: {$0 == newTeam })
                     didWinSecondRound = true
                     
                 } else if pointTotal < newTeam.Score {
-                    gameResults += "Your team lost against the \(newTeam.TeamName), SOL!"
+                    gameResults += " Your team lost against the \(newTeam.TeamName), SOL!"
                     
                     //footBallVM.totalLosses += 1
                     return gameResults
@@ -342,19 +342,19 @@ Test
         if didWinSecondRound == true {
             
             if let newTeam = POteams.randomElement() {
-                gameResults += "Last game in the play-offs, good luck! If we make it, we are going to the Superbowl for the first time in history!!\n The lions will now play against \(newTeam.TeamName)"
+                gameResults += " Last game in the play-offs, good luck! If we make it, we are going to the Superbowl for the first time in history!! The lions will now play against \(newTeam.TeamName)"
                 
                 if pointTotal >= newTeam.Score {
                     
                     
-                    gameResults += "Great job, \(coachName)! You Won against the \(newTeam.TeamName)! You made histroy, you are taking the Lions to the Superbowl!"
+                    gameResults += " Great job, \(coachName)! You Won against the \(newTeam.TeamName)! You made histroy, you are taking the Lions to the Superbowl!"
                     
                     //footBallVM.totalWins += 1
                     POteams.removeAll(where: {$0 == newTeam })
                     didWinThirdRound = true
                     
                 } else if pointTotal < newTeam.Score {
-                    gameResults += "Your team lost against the \(newTeam.TeamName), SOL!"
+                    gameResults += " Your team lost against the \(newTeam.TeamName), SOL!"
                     
                     //footBallVM.totalLosses += 1
                     return gameResults
@@ -368,12 +368,12 @@ Test
         if didWinThirdRound == true {
             
             if let newTeam = POteams.randomElement() {
-                gameResults += "Welcome to the Superbowl!! Now is your chance to show that the Lions really are the Kings of the NFL. This is your day to make Detroit proud The lions will now play against \(newTeam.TeamName)"
+                gameResults += " Welcome to the Superbowl!! Now is your chance to show that the Lions really are the Kings of the NFL. This is your day to make Detroit proud The lions will now play against \(newTeam.TeamName)"
                 
                 if pointTotal >= newTeam.Score {
                     
                     
-                    gameResults += "Great job, \(coachName)! You Won against the \(newTeam.TeamName)! YOU DID IT!!!!"
+                    gameResults += " Great job, \(coachName)! You Won against the \(newTeam.TeamName)! YOU DID IT!!!!"
                     
                     
                     
@@ -382,7 +382,7 @@ Test
                     didWinSuperbowl = true
                     
                 } else if pointTotal < newTeam.Score {
-                    gameResults += "Your team lost against the \(newTeam.TeamName), SOL!"
+                    gameResults += " Your team lost against the \(newTeam.TeamName), SOL!"
                     
                     
                     //footBallVM.totalLosses += 1
